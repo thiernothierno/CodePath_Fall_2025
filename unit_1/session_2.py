@@ -74,3 +74,47 @@ print(sort_by_parity(nums))
 
 nums = [0]
 print(sort_by_parity(nums))
+
+
+# Advanced Problem Set Version 2
+# Problem 1: Matrix Addition
+
+# Understand
+# What to return if matrices have not the same dimension?
+# Is there a time or space complexity constraint?
+
+# Plan
+# Define a result matrice to store the output.
+# Return "Can't add matrices" if matrices have not the same size.
+# For each [i][j] position, add matrice_1 and matrice_2 then store the sum in the result matrix.
+# Return result.
+
+# Implement
+def add_matrices(matrix1, matrix2):
+    """Function that return the sum of two matrices"""
+    row_1, col_1 = len(matrix1), len(matrix1[0])
+    row_2, col_2 = len(matrix2), len(matrix2[0])
+    if row_1 != row_2 or col_1 != col_2:
+        print("Can't add matrices.")
+
+    result = [[0 for _ in range(row_1)] for _ in range(col_1)]
+    for i in range(col_1):
+        for j in range(col_2):
+            result[i][j] = matrix1[i][j] + matrix2[i][j]
+
+    return result
+
+
+matrix1 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matrix2 = [
+    [9, 8, 7],
+    [6, 5, 4],
+    [3, 2, 1]
+]
+
+print(add_matrices(matrix1, matrix2))
