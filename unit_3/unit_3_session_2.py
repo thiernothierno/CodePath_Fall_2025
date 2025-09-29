@@ -1,7 +1,7 @@
 
 
 # Advanced Problem Set Version 1: Problem 2: Build the Tallest Skyscraper
-
+"""This problem help how to compare adjacent element using stack."""
 # Understand
 # Is the input format always positive integers?
 # What should we return when the given floors is empty?
@@ -17,6 +17,8 @@
 # THen add element to stack and increment count to start building a new skyscraper.
 # Return count.
 # Implement
+
+
 def build_skyscrapers(floors):
     """Return the number of skyscrapers you can build using the given floors."""
     stack = []
@@ -86,9 +88,23 @@ print(next_greater_dream([1, 2, 3, 4, 3]))
 
 
 # Standard Problem Set Version 2: Problem 2: Find First Symmetrical Landmark Name
-"""I picked this problem because it """
+"""I picked this problem because it requires a combination of learning the two pointer technique and how to define and work with helper function. """
+
 # Understand
+# What the output format should look like?
+# What does it mean to a word to be symmetrical?
+# Is there a time or space complexity constraint?
+
 # Plan
+# Define a helper function that will return true if word is symmetrical or not.
+# Inside the helper function, declare two pointers left and right pointing respectivelly to 0 and len(words) - 1.
+# while the left point is less than the right pointer, return false if their corresponding char is not the same.
+# Otherwise, increment left pointer by 1, and decrement right pointer by 1.
+# Return True if condition is satisfied.
+# Outside the helper function, iterate over the given landmark,
+# For each word, return word if it symmetrical.
+# If no match found, return ''.
+
 # Implement
 
 
