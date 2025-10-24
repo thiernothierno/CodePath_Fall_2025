@@ -140,7 +140,7 @@ print(collect_false_evidence(clue1))
 print(collect_false_evidence(clue5))
 
 # Problem 3: Prioritizing Suspects
-"""This problem demonstrates how"""
+"""This problem demonstrates the manipulation of pointers from one node to another."""
 # Understand
 # WHat should we return when the linked list is empty?
 # What should we return when the linked list contain only one element?
