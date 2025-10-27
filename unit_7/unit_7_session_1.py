@@ -1,6 +1,7 @@
 # 2 Advanced Problem Set Version 1 and 1 standard problem set version 1
 
 # Problem 1: Counting the Layers of a Sandwich
+"""This problem demonstrate how recursion works."""
 # Understand
 # Is the given input always in a list format?
 # Is the list consist a neested list?
@@ -13,6 +14,8 @@
 # Time complexity: O(n)
 # Space complexity: O(n)
 # Implement
+
+
 def count_layers(sandwich):
     """Function that returns the total number of sandwich layers."""
     if len(sandwich) == 0:
@@ -32,6 +35,7 @@ print(count_layers(sandwich2))
 
 
 # Problem 2: Reversing Deli Orders
+"""This problem shows how we can differently reverse a list of element using a recursion. """
 # Understand
 # Is the given input a list or a tuple?
 # What the output format should look like?
@@ -49,6 +53,7 @@ print(count_layers(sandwich2))
 # Time complexity: O(n)
 # Space complexity: O(n)
 # Implement
+
 
 def reverse_helper(orders):
     """Function that reverse elements in a list"""
@@ -71,12 +76,15 @@ print(reverse_order(order))
 
 
 # Problem 1: Counting Iron Man's Suits
+"""This problem demonstrates how we can solve a problem both iteratively and recursively"""
 # Understand
 # What is the format of the input? list? tuple?
 # Is there a time or space complexity constraint?
 #
 # Plan
 # Implement
+
+
 def count_suits_iterative(suits):
     """Iteratively count the total number of suits in the list."""
     # Define a variable to count, initialize it to 0.

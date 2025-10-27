@@ -1,5 +1,6 @@
 
 # Problem 1: Find Millenium Falcon Part
+"""This problem emphasizes the use of binary search algorithm."""
 # Understand
 # Is the given list always sorted?
 # What should we do when the input has no element?
@@ -19,6 +20,8 @@
 # Space Complexity: O(log N) due to the recursive call stack in the worst case.
 
 # Implement
+
+
 def check_stock(inventory, part_id):
     """Return True if the part_id is in inventory and False otherwise."""
     if len(inventory) == 0:
@@ -41,6 +44,8 @@ print(check_stock([1, 2, 5, 12, 20], 100))  # Output: False
 
 
 # Problem 2: Find Millenium Falcon Part I
+"""This problem emphasizes how we can perform recursion on a binary search."""
+
 # Understand
 # Is the given list always sorted?
 # What should we do when the input has no element?
@@ -59,6 +64,8 @@ print(check_stock([1, 2, 5, 12, 20], 100))  # Output: False
 # Space Complexity: O(log N) due to the recursive call stack in the worst case.
 
 # Implement
+
+
 def check_stock_recursive(inventory, part_id):
     """Return True if the part_id is in inventory and False otherwise."""
     def helper(my_list, target, low, high):
@@ -81,7 +88,7 @@ print(check_stock_recursive([1, 2, 5, 12, 20], 120))  # Output: False
 
 
 # Problem 3: Find First and Last Frequency Positions
-
+"""I picked this problem because it demonstrates the concept of binary search and how to use it from different scenarios."""
 # Understand
 # Is the array always sorted?
 # What should we do when the target value appears only once in the array?
@@ -105,6 +112,8 @@ print(check_stock_recursive([1, 2, 5, 12, 20], 120))  # Output: False
 # Time Complexity: O(log N) because we are performing binary search on each helper function.
 # Space Complexity: O(1) since we are using variables to store our result.
 # Implement
+
+
 def find_frequency_positions(transmissions, target_code):
     # Helper function to find the first occurance of target value.
     def first_frequency_positions(transmissions, target_code):
